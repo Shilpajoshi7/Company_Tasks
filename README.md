@@ -7,7 +7,8 @@ sudo apt-get install apache2
 sudo apt-get install php libapache2-mod-php
 sudo apt install php-dev libmcrypt-dev php-pear
 sudo pecl channel-update pecl.php.net
-sudo pecl install mcrypt-1.0.1
+sudo pecl install mcrypt-1.0.5
+
 sudo service apache2 restart
 /var/www/html
 sudo rm index.html
