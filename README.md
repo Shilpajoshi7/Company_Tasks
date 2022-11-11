@@ -15,3 +15,6 @@ sudo service apache2 restart
 cd /var/www/html
 sudo rm index.html
 sudo nano test.php
+
+
+https://medium.com/analytics-vidhya/learn-to-deploy-a-php-application-using-amazon-ec2-instance-cb0c212e6362
