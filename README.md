@@ -27,3 +27,22 @@ https://medium.com/analytics-vidhya/learn-to-deploy-a-php-application-using-amaz
 https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-apache-and-mod_wsgi-on-ubuntu-14-04
 
 
+#___________________________________________________________Task3 Load Balancer_______________________________________________________________________________________
+
+-->> Task1) Load Balancing This is VM1 refresh This is VM2 
+-->> Task2) Autoscaling 
+
+Task1)
+
+1) VM1 mei ssh karke  VM2 mei bhi same karna hei  
+cd downloads 
+ssh ka link key daal ke ex ssh -i key1.pem azureuser@20.168.231.212
+
+2) Apache daala aur page moify karna 
+sudo apt update
+sudo apt install apache2
+sudo service apache2 start
+cd /var/www/html
+sudo rm index.html
+sudo vi index.html
+<h1> This is VM1 </h1>
