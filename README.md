@@ -1,6 +1,6 @@
 # My_Company_Tasks
 
-#______________________________________________Task1 :Deploy a PHP Application using Azure Virtual Machine on Apache Server______________________________________________
+#___________________________________________Task1 :Deploy a PHP Application using Azure Virtual Machine on Apache Server______________________________________________
 
 sudo apt-get update
 sudo apt-get install apache2
@@ -21,7 +21,7 @@ https://medium.com/analytics-vidhya/learn-to-deploy-a-php-application-using-amaz
 
 
 
-#___________________________________________Task2 Deploy django application on Azure Virtual Machine in apache and nginx server__________________________________________
+#_________________________________________Task2 Deploy django application on Azure Virtual Machine in apache and nginx server__________________________________________
 
 ->> Link simply apache se kiya django ka rocket aara (Koi hello wrold application nhi banaye)
 https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-apache-and-mod_wsgi-on-ubuntu-14-04
@@ -50,3 +50,9 @@ sudo vi index.html
 __________Task2_________
 Take help from 
 https://www.youtube.com/watch?v=xD9MVGY216o
+
+ yes >/dev/null &
+ top
+
+#___________Task4 Deploy Reactjs Application on Azure App Service and distribute traffic through AZ Traffic manager  __________
+
