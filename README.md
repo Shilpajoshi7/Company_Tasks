@@ -56,3 +56,5 @@ https://www.youtube.com/watch?v=xD9MVGY216o
 
 #___________Task4 Deploy Reactjs Application on Azure App Service and distribute traffic through AZ Traffic manager  __________
 
+https://websitebeaver.com/deploy-create-react-app-to-azure-app-services
+
