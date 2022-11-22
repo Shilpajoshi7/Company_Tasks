@@ -56,5 +56,22 @@ https://www.youtube.com/watch?v=xD9MVGY216o
 
 #___________Task4 Deploy Reactjs Application on Azure App Service and distribute traffic through AZ Traffic manager  __________
 
-https://websitebeaver.com/deploy-create-react-app-to-azure-app-services
+xxxxxxx https://websitebeaver.com/deploy-create-react-app-to-azure-app-services If u want ot try it using github pipeline xxxxxxx
+
+correct way deploy reactjs application on azure app service from vs code   (VS codeko use karke)
+https://medium.com/ms-club-of-sliit/deploy-a-react-app-using-azure-app-service-from-vs-code-57643313f53c
+
+
+->> agar aysa eroe ayega toh 
+Error  npm ERR! code ERR_SOCKET_TIMEOUT
+Soln   npm  cache clear --force
+
+
+
+
+
+
+
+
+
 
