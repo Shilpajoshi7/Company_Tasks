@@ -46,3 +46,7 @@ cd /var/www/html
 sudo rm index.html
 sudo vi index.html
 <h1> This is VM1 </h1>
+
+__________Task2_________
+Take help from 
+https://www.youtube.com/watch?v=xD9MVGY216o
