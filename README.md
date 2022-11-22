@@ -1,4 +1,4 @@
-# S_Tasks
+# My_Company_Tasks
 
 #______________________________________________Task1 :Deploy a PHP Application using Azure Virtual Machine on Apache Server______________________________________________
 
