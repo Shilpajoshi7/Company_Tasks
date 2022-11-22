@@ -32,10 +32,10 @@ https://www.digitalocean.com/community/tutorials/how-to-serve-django-application
 -->> Task1) Load Balancing This is VM1 refresh This is VM2 
 -->> Task2) Autoscaling 
 
-Task1)
+_____Task1_____
 
 1) VM1 mei ssh karke  VM2 mei bhi same karna hei  
-cd downloads 
+cd downloads --->>key downloads mei save hoti hai
 ssh ka link key daal ke ex ssh -i key1.pem azureuser@20.168.231.212
 
 2) Apache daala aur page moify karna 
@@ -45,4 +45,4 @@ sudo service apache2 start
 cd /var/www/html
 sudo rm index.html
 sudo vi index.html
-<h1> This is VM1 </h1>
+<h1> This is VM1 </h1
