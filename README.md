@@ -45,4 +45,4 @@ sudo service apache2 start
 cd /var/www/html
 sudo rm index.html
 sudo vi index.html
-<h1> This is VM1 </h1
+<h1> This is VM1 </h1>
