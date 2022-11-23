@@ -75,7 +75,7 @@ npm start
 
 
 ->> agar aysa eroe ayega toh 
-Error  npm ERR! code ERR_SOCKET_TIMEOUT
+Error  npm ERR! code ERR_SOCKET_TIMEOUT    ( I Think yeh sirf network connectivity issue hei Internet problem )
 Soln   npm cache clear --force
 
 
