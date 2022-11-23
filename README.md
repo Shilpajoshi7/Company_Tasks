@@ -78,7 +78,7 @@ npm start
 Error  npm ERR! code ERR_SOCKET_TIMEOUT    ( I Think yeh sirf network connectivity issue hei Internet problem )
 Soln   npm cache clear --force
 
-Add Custom Domain to Traffic Manager
+---XXXX Add Custom Domain to Traffic Manager
 https://www.youtube.com/watch?v=1ggz9qZpVHo
 
 
