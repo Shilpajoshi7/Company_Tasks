@@ -59,12 +59,24 @@ https://www.youtube.com/watch?v=xD9MVGY216o
 xxxxxxx https://websitebeaver.com/deploy-create-react-app-to-azure-app-services If u want ot try it using github pipeline xxxxxxx
 
 correct way deploy reactjs application on azure app service from vs code   (VS codeko use karke)
+
+https://medium.com/geekculture/easiest-way-to-host-your-react-app-azure-vs-code-8046f9f7fb0b
 https://medium.com/ms-club-of-sliit/deploy-a-react-app-using-azure-app-service-from-vs-code-57643313f53c
+
+
+create a folder open it on VS Code
+Now go to vs code terminal 
+
+npx create-react-app shilpa    (Folder ka naam shilpa de re mei)
+cd shilpa
+npm start
+
+
 
 
 ->> agar aysa eroe ayega toh 
 Error  npm ERR! code ERR_SOCKET_TIMEOUT
-Soln   npm  cache clear --force
+Soln   npm cache clear --force
 
 
 
