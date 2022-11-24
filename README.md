@@ -82,7 +82,8 @@ Soln   npm cache clear --force
 https://www.youtube.com/watch?v=1ggz9qZpVHo
 
 
-
+______________________________________Deploy Nojejs application on azure virtual machine _____________________________________________________________________
+https://medium.com/tensult/configure-nginx-with-nodejs-application-on-aws-ubuntu-18-04-server-for-different-http-ports-a2f722902032
 
 
 
