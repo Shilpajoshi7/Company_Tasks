@@ -24,7 +24,30 @@ https://medium.com/analytics-vidhya/learn-to-deploy-a-php-application-using-amaz
 #_________________________________________Task2 Deploy django application on Azure Virtual Machine in apache and nginx server__________________________________________
 
 ->> Link simply apache se kiya django ka rocket aara (Koi hello wrold application nhi banaye)
+
 https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-apache-and-mod_wsgi-on-ubuntu-14-04
+sudo apt-get update
+sudo apt-get install python3-pip apache2 libapache2-mod-wsgi-py3
+sudo pip install virtualenv
+mkdir ~/myproject
+cd ~/myproject
+virtualenv myprojectenv
+source myprojectenv/bin/activate
+pip install django
+django-admin.py startproject myproject .
+nano myproject/settings.py
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #___________________________________________________________Task3 Load Balancer_______________________________________________________________________________________
@@ -78,7 +101,7 @@ npm start
 Error  npm ERR! code ERR_SOCKET_TIMEOUT    ( I Think yeh sirf network connectivity issue hei Internet problem )
 Soln   npm cache clear --force
 
----XXXX Add Custom Domain to Traffic Manager
+---XXXX Not Req Add Custom Domain to Traffic Manager
 https://www.youtube.com/watch?v=1ggz9qZpVHo
 
 
