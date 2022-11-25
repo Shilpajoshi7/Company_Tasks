@@ -100,5 +100,7 @@ ______________________________________Task6  Deploy Nojejs application on azure 
 https://medium.com/tensult/configure-nginx-with-nodejs-application-on-aws-ubuntu-18-04-server-for-different-http-ports-a2f722902032
 
 
+____________________________________Task7 Deploy python code using azure app function and 
+
 
 
