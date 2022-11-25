@@ -16,6 +16,10 @@ cd /var/www/html
 sudo rm index.html
 sudo nano test.php
 
+<?php
+echo “Hello World!”;
+?>
+
 
 https://medium.com/analytics-vidhya/learn-to-deploy-a-php-application-using-amazon-ec2-instance-cb0c212e6362
 
@@ -41,11 +45,7 @@ https://www.digitalocean.com/community/tutorials/how-to-serve-django-application
 
 
 #___________________________________________________________Task3 Load Balancer_______________________________________________________________________________________
-
--->> Task1) Load Balancing This is VM1 refresh This is VM2 
--->> Task2) Autoscaling 
-
-_____Task1_____
+Load Balancing ke page refresh karke  This is VM1 refresh This is VM2 
 
 1) VM1 mei ssh karke  VM2 mei bhi same karna hei  
 cd downloads --->>key downloads mei save hoti hai
@@ -58,16 +58,17 @@ sudo service apache2 start
 cd /var/www/html
 sudo rm index.html
 sudo vi index.html
-<h1> This is VM1 </h1>
+<h1> This is VM1 </h1>       same in VM2
 
-__________Task2_________
+__________Task4  Autoscaling in LB  _________
 Take help from 
 https://www.youtube.com/watch?v=xD9MVGY216o
 
+ Autoscaling mei CPU load increse karne ke liye
  yes >/dev/null &
  top
 
-#___________Task4 Deploy Reactjs Application on Azure App Service and distribute traffic through AZ Traffic manager  __________
+#___________Task5  Deploy Reactjs Application on Azure App Service and distribute traffic through AZ Traffic manager  __________
 
 xxxxxxx https://websitebeaver.com/deploy-create-react-app-to-azure-app-services If u want ot try it using github pipeline xxxxxxx
 
@@ -95,7 +96,7 @@ Soln   npm cache clear --force
 https://www.youtube.com/watch?v=1ggz9qZpVHo
 
 
-______________________________________Deploy Nojejs application on azure virtual machine _____________________________________________________________________
+______________________________________Task6  Deploy Nojejs application on azure virtual machine _____________________________________________________________________
 https://medium.com/tensult/configure-nginx-with-nodejs-application-on-aws-ubuntu-18-04-server-for-different-http-ports-a2f722902032
 
 
