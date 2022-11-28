@@ -58,6 +58,7 @@ python3 ./manage.py createsuperuser
 
 sudo nano /etc/apache2/sites-available/000-default.conf
 
+-------Indentation shi se lena copy karte time-----------
 Alias /static /home/azureuser/myproject/static
     <Directory /home/azureuser/myproject/static>
         Require all granted
@@ -90,7 +91,7 @@ ssh ka link key daal ke ex ssh -i key1.pem azureuser@20.168.231.212
 
 2) Apache daala aur page moify karna 
 sudo apt update
-sudo apt install apache2
+sudo apt install apache2 -y
 sudo service apache2 start
 cd /var/www/html
 sudo rm index.html
@@ -102,8 +103,11 @@ Take help from
 https://www.youtube.com/watch?v=xD9MVGY216o
 
  Autoscaling mei CPU load increse karne ke liye
+ top
  yes >/dev/null &
  top
+kill -9 pid  ----> pid lena
+
 
 #___________Task5  Deploy Reactjs Application on Azure App Service and distribute traffic through AZ Traffic manager  __________
 
