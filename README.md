@@ -3,9 +3,9 @@
 #___________________________________________Task1 :Deploy a PHP Application using Azure Virtual Machine on Apache Server______________________________________________
 
 sudo apt-get update
-sudo apt-get install apache2
-sudo apt-get install php libapache2-mod-php
-sudo apt install php-dev libmcrypt-dev php-pear
+sudo apt-get install apache2 -y
+sudo apt-get install php libapache2-mod-php -y
+sudo apt install php-dev libmcrypt-dev php-pear -y
 sudo pecl channel-update pecl.php.net
 
 ->> yha pe latest dalna hei otw error 1.0.1 xxx
@@ -14,12 +14,13 @@ sudo pecl install mcrypt-1.0.5
 sudo service apache2 restart
 cd /var/www/html
 sudo rm index.html
-sudo nano test.php
+xx sudo nano test.php
 
-<?php
-echo “Hello World!”;
-?>
+xx <?php
+xx echo “Hello World!”;
+xx ?>
 
+sudo git clone https://github.com/Shilpajoshi7/PHPTrialApplication.git
 
 https://medium.com/analytics-vidhya/learn-to-deploy-a-php-application-using-amazon-ec2-instance-cb0c212e6362
 
@@ -32,11 +33,47 @@ https://medium.com/analytics-vidhya/learn-to-deploy-a-php-application-using-amaz
 https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-apache-and-mod_wsgi-on-ubuntu-14-04
 
 
+sudo apt-get update
+sudo apt-get install python3-pip apache2 libapache2-mod-wsgi-py3
+sudo pip install virtualenv
+mkdir ~/myproject
+cd ~/myproject
+virtualenv myprojectenv
+source myprojectenv/bin/activate
+pip install django
+django-admin startproject myproject .
+nano myproject/settings.py
+
+import os 
+ALLOWED_HOSTS = [' ']      ----> VM IP Address 
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 
+cd ~/myproject
+./manage.py makemigrations
+./manage.py migrate
+python3 ./manage.py createsuperuser
+./manage.py collectstatic
+./manage.py runserver 0.0.0.0:8000
 
+sudo nano /etc/apache2/sites-available/000-default.conf
 
+Alias /static /home/azureuser/myproject/static
+    <Directory /home/azureuser/myproject/static>
+        Require all granted
+    </Directory>
 
+    <Directory /home/azureuser/myproject/myproject>
+        <Files wsgi.py>
+            Require all granted
+        </Files>
+    </Directory>
+
+    WSGIDaemonProcess myproject python-path=/home/azureuser/myproject python-home=/home/azureuser/myproject/myprojectenv
+    WSGIProcessGroup myproject
+    WSGIScriptAlias / /home/azureuser/myproject/myproject/wsgi.py
+    
+sudo service apache2 restart    
 
 
 
