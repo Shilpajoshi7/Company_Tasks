@@ -98,9 +98,11 @@ sudo rm index.html
 sudo vi index.html
 <h1> This is VM1 </h1>       same in VM2
 
-__________Task4  Autoscaling in LB  _________
+_________________________________________________________Task4  Autoscaling in LB  _____________________________________________________________________
 Take help from 
 https://www.youtube.com/watch?v=xD9MVGY216o
+
+NOTE : 1 hei VM lena varna nhi hora ( I think 2 or more VM leke load un VMs mei manage hooo zara hei )
 
  Autoscaling mei CPU load increse karne ke liye
  top
