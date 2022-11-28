@@ -124,9 +124,35 @@ https://medium.com/ms-club-of-sliit/deploy-a-react-app-using-azure-app-service-f
 create a folder open it on VS Code
 Now go to vs code terminal 
 
-npx create-react-app shilpa    (Folder ka naam shilpa de re mei)
-cd shilpa
+node --version
+npx --version
+create-react-app mediumblog
+cd mediumblog
 npm start
+
+web.config
+<?xml version="1.0"?>    
+<configuration>    
+ <system.webServer>    
+   <rewrite>    
+     <rules>    
+       <rule name="React Routes" stopProcessing="true">    
+         <match url=".*" />    
+         <conditions logicalGrouping="MatchAll">    
+          <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />    
+          <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />    
+          <add input="{REQUEST_URI}" pattern="^/(api)" negate="true" />    
+         </conditions>    
+         <action type="Rewrite" url="/" />    
+       </rule>    
+     </rules>    
+   </rewrite>    
+ </system.webServer>    
+</configuration>  
+
+npm run build 
+
+Install the “Azure App Service” VS code extension
 
 
 
