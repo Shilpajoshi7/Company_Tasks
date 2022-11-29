@@ -111,7 +111,7 @@ NOTE : 1 hei VM lena varna nhi hora ( I think 2 or more VM leke load un VMs mei 
 kill -9 pid  ----> pid lena
 
 
-#___________Task5  Deploy Reactjs Application on Azure App Service and distribute traffic through AZ Traffic manager  __________
+#___________Task5  Deploy Reactjs Application on Azure App Service and distribute traffic through AZ Traffic manager  _______  ___
 
 xxxxxxx https://websitebeaver.com/deploy-create-react-app-to-azure-app-services If u want ot try it using github pipeline xxxxxxx
 
@@ -165,7 +165,7 @@ Soln   npm cache clear --force
 https://www.youtube.com/watch?v=1ggz9qZpVHo
 
 
-______________________________________Task6  Deploy Nojejs application on azure virtual machine _____________________________________________________________________
+______________________________________Task6  Deploy Nojejs application on azure virtual machine and add custom doamin _____________________________________
 https://medium.com/tensult/configure-nginx-with-nodejs-application-on-aws-ubuntu-18-04-server-for-different-http-ports-a2f722902032
 
 
