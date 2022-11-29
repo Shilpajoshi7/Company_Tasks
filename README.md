@@ -165,7 +165,7 @@ Soln   npm cache clear --force
 https://www.youtube.com/watch?v=1ggz9qZpVHo
 
 
-______________________________________Task6  Deploy Nojejs application on azure virtual machine and add custom doamin _____________________________________
+______________________________Task6  Deploy Nojejs application on azure virtual machine and add custom doamin to vm public ip address________________________
 https://medium.com/tensult/configure-nginx-with-nodejs-application-on-aws-ubuntu-18-04-server-for-different-http-ports-a2f722902032
 
 
