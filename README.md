@@ -219,5 +219,5 @@ node index.js
 
 _____________________Task7 Deploy python code using azure app function using VS Code and autoschedule it on a daily basics _____________________________
 
-
+https://www.youtube.com/watch?v=y-PAo7rPF94
 
