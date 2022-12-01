@@ -58,7 +58,7 @@ python3 ./manage.py createsuperuser
 
 sudo nano /etc/apache2/sites-available/000-default.conf
 
--------Indentation shi se lena copy karte time-----------
+-------Indentation shi se lena copy karte time-----------  (azureuser khuh se change kiya )
 Alias /static /home/azureuser/myproject/static
     <Directory /home/azureuser/myproject/static>
         Require all granted
@@ -169,7 +169,7 @@ ______________________________Task6  Deploy Nojejs application on azure virtual 
 https://medium.com/tensult/configure-nginx-with-nodejs-application-on-aws-ubuntu-18-04-server-for-different-http-ports-a2f722902032
 
 
-____________________________________Task7 Deploy python code using azure app function and _________________________________________________________________
+_____________________Task7 Deploy python code using azure app function using VS Code and _____________________________
 
 
 
