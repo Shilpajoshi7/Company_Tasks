@@ -130,7 +130,7 @@ create-react-app mediumblog
 cd mediumblog
 npm start
 
-web.config
+web.config file bana ni hei 
 <?xml version="1.0"?>    
 <configuration>    
  <system.webServer>    
@@ -166,10 +166,58 @@ https://www.youtube.com/watch?v=1ggz9qZpVHo
 
 
 ______________________________Task6  Deploy Nojejs application on azure virtual machine and add custom doamin to vm public ip address________________________
-https://medium.com/tensult/configure-nginx-with-nodejs-application-on-aws-ubuntu-18-04-server-for-different-http-ports-a2f722902032
+xxxx https://medium.com/tensult/configure-nginx-with-nodejs-application-on-aws-ubuntu-18-04-server-for-different-http-ports-a2f722902032
+xxxxx https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04
 
 
-_____________________Task7 Deploy python code using azure app function using VS Code and _____________________________
+https://www.youtube.com/watch?v=63kdAMT8yeI
+
+
+
+
+sudo su
+apt update
+apt upgrade -y
+apt install nginx -y
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+apt install nodejs -y
+apt install build-essential -y
+cd /var/www/html
+nano index.js
+////////////////////
+var http = require('http');
+
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World!');
+}).listen(3000);
+/////////////////////
+nano /etc/nginx/sites-available/default
+/////////////////////
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+
+        root /var/www/html;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name _;
+
+        location / {
+                        proxy_pass http://localhost:3000;
+                        proxy_set_header Host $host;
+                        proxy_set_header X-Real-IP $remote_addr;
+                        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                        proxy_set_header X-Forwarded-Proto $scheme;
+                }
+}
+////////////////////
+service nginx restart
+node index.js
+
+
+_____________________Task7 Deploy python code using azure app function using VS Code and autoschedule it on a daily basics _____________________________
 
 
 
