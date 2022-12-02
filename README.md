@@ -172,18 +172,14 @@ xxxxx https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-a
 
 https://www.youtube.com/watch?v=63kdAMT8yeI
 
-
-
-
-sudo su
-apt update
-apt upgrade -y
-apt install nginx -y
+sudo apt update
+sudo apt upgrade -y
+sudo apt install nginx -y
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-apt install nodejs -y
-apt install build-essential -y
+sudo apt install nodejs -y
+sudo apt install build-essential -y
 cd /var/www/html
-nano index.js
+sudo nano index.js
 ////////////////////
 var http = require('http');
 
@@ -192,7 +188,7 @@ http.createServer(function (req, res) {
   res.end('Hello World!');
 }).listen(3000);
 /////////////////////
-nano /etc/nginx/sites-available/default
+sudo nano /etc/nginx/sites-available/default
 /////////////////////
 server {
         listen 80 default_server;
@@ -213,9 +209,8 @@ server {
                 }
 }
 ////////////////////
-service nginx restart
+sudo service nginx restart
 node index.js
-
 
 _____________________Task7 Deploy python code using azure app function using VS Code and autoschedule it on a daily basics _____________________________
 
