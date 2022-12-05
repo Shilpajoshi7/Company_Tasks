@@ -219,7 +219,7 @@ https://www.youtube.com/watch?v=y-PAo7rPF94
 
 _________________Task8 Perform CRUD operations in Azure DB_________________________________________________________________________________________________
 
-BY ME
+BY ME  mne SQL ka kiya  Hume MySQL ka karna hei
 create SQL server 
 https://www.c-sharpcorner.com/article/creating-a-sql-server-in-azure-cloud/
 create SQL DB
@@ -231,3 +231,25 @@ full link ---> https://www.c-sharpcorner.com/article/performing-crud-operations-
 Correct method 
 https://sfoteini.github.io/blog/create-an-azure-database-for-mysql-server-via-the-azure-portal/
 https://learn.microsoft.com/en-us/azure/mysql/single-server/tutorial-design-database-using-portal
+
+Steps ----->
+
+mysql --host=<Server name > --user=<Server admin login name>  -p
+CREATE DATABASE shilpadb;
+USE shilpadb;
+
+CREATE TABLE shilpadb (
+    id serial PRIMARY KEY, 
+    name VARCHAR(50), 
+    quantity INTEGER
+);
+
+INSERT INTO shilpadb (id, name, quantity) VALUES (1, 'seasia', 100);
+INSERT INTO shilpadb (id, name, quantity) VALUES (2, 'mooglelabs', 200);
+
+SELECT * FROM shilpadb;
+
+
+UPDATE shilpadb SET quantity = 400 WHERE name = 'devops';
+
+SELECT * FROM shilpadb;
