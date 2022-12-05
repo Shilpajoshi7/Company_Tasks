@@ -216,3 +216,18 @@ _____________________Task7 Deploy python code using azure app function using VS 
 
 https://www.youtube.com/watch?v=y-PAo7rPF94
 
+
+_________________Task8 Perform CRUD operations in Azure DB_________________________________________________________________________________________________
+
+BY ME
+create SQL server 
+https://www.c-sharpcorner.com/article/creating-a-sql-server-in-azure-cloud/
+create SQL DB
+https://www.youtube.com/watch?v=DB6R7_Bsicc
+
+full link ---> https://www.c-sharpcorner.com/article/performing-crud-operations-in-azure-sql-database/
+
+
+Correct method 
+https://sfoteini.github.io/blog/create-an-azure-database-for-mysql-server-via-the-azure-portal/
+https://learn.microsoft.com/en-us/azure/mysql/single-server/tutorial-design-database-using-portal
