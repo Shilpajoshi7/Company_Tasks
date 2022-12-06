@@ -1,0 +1,13 @@
+_____________________Install Docker in Windows ______________________________
+https://docs.docker.com/desktop/install/windows-install/
+
+--CMD mei zake in mei sei koi ek use kar
+"Docker Desktop Installer.exe" install
+or
+Start-Process 'Docker Desktop Installer.exe' -Wait install
+or
+start /w "" "Docker Desktop Installer.exe" install
+
+--After installation Search kar
+Docker Desktop open it error aata toh 
+jo jo install karna hoga karte ja 
