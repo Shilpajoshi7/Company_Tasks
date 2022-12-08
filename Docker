@@ -41,6 +41,11 @@ echo \
     check karne ke liye --> systemctl status docker O/P: Active
     Docker info janne k liye --> docker info
     
+________________________________________________ HealtCheck Document Resource __________________________________________________________________________
+
+https://docs.docker.com/engine/reference/builder/
+
+https://docs.docker.com/engine/reference/run/#healthcheck
     
     
     
