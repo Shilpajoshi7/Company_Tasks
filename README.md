@@ -253,3 +253,8 @@ SELECT * FROM shilpadb;
 UPDATE shilpadb SET quantity = 400 WHERE name = 'devops';
 
 SELECT * FROM shilpadb;
+
+_____________Task9 Dockerize React App on Azure VM and push it into ACR and deploy it on Contr Instance ,  ___________________
+
+https://medium.com/bb-tutorials-and-thoughts/how-to-run-a-react-app-as-a-container-on-azure-vm-b73094fdc28a
+https://sfoteini.github.io/blog/create-an-azure-database-for-mysql-server-via-the-azure-portal/
