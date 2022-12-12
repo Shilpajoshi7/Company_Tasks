@@ -261,9 +261,12 @@ https://sfoteini.github.io/blog/create-an-azure-database-for-mysql-server-via-th
 
 ________________Task 9 Modified   Dockerize React , Node , django app ________________________________
 
-react
+1)react
 https://www.geeksforgeeks.org/how-to-dockerize-a-reactjs-app/
 
-Node
+2)Node
 https://buddy.works/guides/how-dockerize-node-application
 https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+
+3)django
+https://www.geeksforgeeks.org/dockerizing-a-simple-django-app/
