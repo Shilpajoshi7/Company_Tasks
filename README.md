@@ -258,3 +258,12 @@ _____________Task9 Dockerize React App on Azure VM and push it into ACR and depl
 
 https://medium.com/bb-tutorials-and-thoughts/how-to-run-a-react-app-as-a-container-on-azure-vm-b73094fdc28a
 https://sfoteini.github.io/blog/create-an-azure-database-for-mysql-server-via-the-azure-portal/
+
+________________Task 9 Modified   Dockerize React , Node , django app ________________________________
+
+react
+https://www.geeksforgeeks.org/how-to-dockerize-a-reactjs-app/
+
+Node
+https://buddy.works/guides/how-dockerize-node-application
+https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
