@@ -1,0 +1,14 @@
+_________________________________By Me _________________________________________________________________________________________________________________
+
+Try it --->
+https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=python%2Ctfs-2018-2%2Cbrowser
+
+ERROR ata --->
+
+##[error]No hosted parallelism has been purchased or granted. To request a free parallelism grant, please fill out the following form https://aka.ms/azpipelines-parallelism-request
+Pool: Azure Pipelines
+Image: ubuntu-latest
+Started: Just now
+Duration: 1m 19s
+
+Job preparation parameters
