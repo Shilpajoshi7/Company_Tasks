@@ -111,7 +111,7 @@ NOTE : 1 hei VM lena varna nhi hora ( I think 2 or more VM leke load un VMs mei 
 kill -9 pid  ----> pid lena
 
 
-#___________Task5  Deploy Reactjs Application on Azure App Service and distribute traffic through AZ Traffic manager  _______  ___
+#___________Task5  Deploy Reactjs Application on Azure App Service and distribute traffic through AZ Traffic manager  __________
 
 xxxxxxx https://websitebeaver.com/deploy-create-react-app-to-azure-app-services If u want ot try it using github pipeline xxxxxxx
 
@@ -254,12 +254,12 @@ UPDATE shilpadb SET quantity = 400 WHERE name = 'devops';
 
 SELECT * FROM shilpadb;
 
-_____________Task9 Dockerize React App on Azure VM and push it into ACR and deploy it on Contr Instance ,  ___________________
+_____________Task9 Dockerize React App on Azure VM and deploy it into ACR and deploy it on Contr Instance   ___________________
 
 https://medium.com/bb-tutorials-and-thoughts/how-to-run-a-react-app-as-a-container-on-azure-vm-b73094fdc28a
 https://sfoteini.github.io/blog/create-an-azure-database-for-mysql-server-via-the-azure-portal/
 
-________________Task 9 Modified   Dockerize React , Node , django app ________________________________
+________________Task 9 Dockerize React , Node , django app deploy it into ACR and Contr Instance  ________________________________
 
 1)react
 https://www.geeksforgeeks.org/how-to-dockerize-a-reactjs-app/
