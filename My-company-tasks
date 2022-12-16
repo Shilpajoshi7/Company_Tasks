@@ -270,3 +270,32 @@ https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 
 3)django
 https://www.geeksforgeeks.org/dockerizing-a-simple-django-app/
+
+
+
+____________________  How to push DOcker images to DockerHUb _____________________________
+
+My DockerHub account details  
+shilpajoshi6789@gmail.com
+Docker@1997
+
+Steps are as follows ----->
+docker login 
+Uname : DockerHub account ka username  ex shilpajoshidocker
+Pswd  : DockerHub account login karne ke liye jo pswd liya tha  ex Docker@1997
+docker tag <existing-image> <hub-user>/<repo-name>[:<tag>]
+docker push <hub-user>/<repo-name>:<tag>
+
+__________________ How to push Docker images to ACR ________________________
+
+
+________________ How to push docker images to Container Instance ________________________
+
+
+
+
+
+
+
+
+
