@@ -287,7 +287,12 @@ docker tag <existing-image> <hub-user>/<repo-name>[:<tag>]
 docker push <hub-user>/<repo-name>:<tag>
 
 __________________ How to push Docker images to ACR ________________________
+https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-docker-cli?tabs=azure-cli
 
+Images mne ek folder mei le lee sari DockerHub sei 
+docker images --> Apni images ke names dekh le 
+d tag imagename(docker images sei mere ek img le re) myregistry.azurecr.io(Login server hei yeh ACR ka Overview mei dekh)/folder1(in Which I Want My Img)/myimgname(I want 2 Give Now)
+d push myregistry.azurecr.io(Login server hei yeh ACR ka)/folder1/myimageIGiveNow
 
 ________________ How to push docker images to Container Instance ________________________
 
