@@ -1,3 +1,9 @@
+________________React Pipeline 
+
 npx create-react-app my-app
 cd my-app
 npm start
+
+______________________Django Pipeline
+django-admin startproject myproject .
+python manage.py runserver 0.0.0.0:8000
