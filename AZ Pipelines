@@ -7,3 +7,6 @@ npm start
 ______________________Django Pipeline
 django-admin startproject myproject .
 python manage.py runserver 0.0.0.0:8000
+
+Locally check karne ke liye
+localhost:8000
