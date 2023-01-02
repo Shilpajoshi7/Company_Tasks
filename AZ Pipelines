@@ -29,12 +29,6 @@ _______________________React Pipeline on VM
    14  ls
    15  cd drop
    16  ls
-   17  ap
-   18* aptget install apache2
-   19  apt-get install apache2
-   20  sudo apt-get install apache2
-   21  sudo apt-get install apache 2
-   22  sudo apt-get install apache
    23  sudo apt-get install apache2
    24  ls
    25  cd ..
