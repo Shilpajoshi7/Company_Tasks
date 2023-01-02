@@ -11,6 +11,8 @@ python manage.py runserver 0.0.0.0:8000
 Locally check karne ke liye
 localhost:8000
 
+python -version 
+django-admin --version
 
 _______________________React Pipeline on VM
   1  mkdir myagent && cd myagent
@@ -19,7 +21,11 @@ _______________________React Pipeline on VM
     4  ./config.sh
     5  ./run.sh 
     6  ls
-    7  cd _work
+    7  cd _work/r1/a/_shilpa-reac-cicd-onVM-CI/
+    
+    OR
+    
+    cd _work
     8  ls
     9  cd r1
    10  ls
