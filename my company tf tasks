@@ -1,0 +1,133 @@
+Task-1 VM Apache server run
+
+main.tf
+
+terraform {
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "3.38.0"
+    }
+  }
+}
+provider "azurerm" {
+  # Configuration options
+  subscription_id = "bee184be-f044-44aa-808f-ea5c08b0959b"
+  tenant_id = "824e1ebf-24f1-4ed6-8a2a-d3d4df7f41d7"
+  client_id = "9c82fe93-6210-4f96-aaf3-c0d71aa5febe"
+  client_secret = "hlA8Q~KCqCOu.DUwswUprQgvHoxy1VbUut5P6bq0"
+  features { }
+}
+resource "azurerm_resource_group" "rg" {
+  name     = "rg-vnet-shilpa"
+  location = "West Europe"
+}
+resource "azurerm_virtual_network" "v-label" {
+  name                = "vm-network-shilpa"
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+  address_space       = ["10.0.0.0/16"]
+}
+resource "azurerm_subnet" "internal-subnet" {
+  name                 = "sub-internal-shilpa"
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.v-label.name
+  address_prefixes     = ["10.0.2.0/24"]
+}
+resource "azurerm_network_security_group" "security-label" {
+  name = "moogle-sg-shilpa"
+  location = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+  security_rule {
+    access = "Allow"
+    destination_address_prefix = "*"
+    destination_port_range = "80"
+    direction = "Inbound"
+    name = "Http"
+    priority = 100
+    protocol = "Tcp"
+    source_address_prefix = "*"
+    source_port_range = "*"
+  }
+  security_rule {
+    access = "Allow"
+    destination_address_prefix = "*"
+    destination_port_range = "22"
+    direction = "Inbound"
+    name = "ssh"
+    priority = 101
+    protocol = "Tcp"
+    source_address_prefix = "*"
+    source_port_range = "*"
+  }
+}
+resource "azurerm_subnet_network_security_group_association" "association-label" {
+    subnet_id = azurerm_subnet.internal-subnet.id
+    network_security_group_id = azurerm_network_security_group.security-label.id
+}
+resource "azurerm_public_ip" "label-ip" {
+  name                = "ip-name-shilpa"
+  resource_group_name = azurerm_resource_group.rg.name
+  location            = azurerm_resource_group.rg.location
+  allocation_method   = "Dynamic"
+}
+resource "azurerm_storage_account" "storage-label6" {
+  name                     = "storagenameshilpa"
+  resource_group_name      = azurerm_resource_group.rg.name
+  location                 = azurerm_resource_group.rg.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+}
+resource "azurerm_network_interface" "interface-label" {
+  name                = "interface-name-shilpa"
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+  ip_configuration {
+    name                          = "ip-config"
+    subnet_id                     = azurerm_subnet.internal-subnet.id
+    private_ip_address_allocation = "Dynamic"
+    public_ip_address_id = azurerm_public_ip.label-ip.id
+  }
+}
+resource "azurerm_virtual_machine" "vm-label" {
+  name                  = "vm-name-shilpa"
+  location              = azurerm_resource_group.rg.location
+  resource_group_name   = azurerm_resource_group.rg.name
+  network_interface_ids = [azurerm_network_interface.interface-label.id]
+  vm_size               = "Standard_B1s"
+  storage_image_reference {
+    publisher = "Canonical"
+    offer     = "UbuntuServer"
+    sku       = "18.04-LTS"
+    version   = "latest"
+  }
+  storage_os_disk {
+    name              = "myosdisk1"
+    caching           = "ReadWrite"
+    create_option     = "FromImage"
+    managed_disk_type = "Standard_LRS"
+  }
+ os_profile {
+    computer_name      = "mooglelabs"
+    admin_username     = "shilpa"
+    admin_password     = "Mooglelabs@123"
+    custom_data = file("script.sh")
+  }
+  os_profile_linux_config  {
+    disable_password_authentication = true
+    ssh_keys {
+      key_data = file("C:\\Users\\joshishilpa\\.ssh\\id_rsa.pub")
+      path = "/home/shilpa/.ssh/authorized_keys"
+    }
+  }
+}
+
+
+script.sh
+
+#! /bin/bash
+sudo apt-get update
+sudo apt-get install -y apache2
+sudo systemctl start apache2
+sudo systemctl enable apache2
+echo "<h1>Demo Bootstrapping Azure Virtual Machine</h1>" | sudo tee /var/www/html/index.html
