@@ -198,7 +198,7 @@ sudo echo "<VirtualHost *:80>
 </VirtualHost>" > /etc/apache2/sites-available/000-default.conf
 sudo systemctl restart apache2
 
-__________________________________________________________Task-2 React application deploy using tf on VM_______________________________________________________
+__________________________________________________________Task-3 React application deploy using tf on VM_______________________________________________________
 #!/bin/bash
 sudo apt-get update
 sudo apt-get upgrade -y
