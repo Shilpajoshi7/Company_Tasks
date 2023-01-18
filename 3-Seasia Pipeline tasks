@@ -1,0 +1,42 @@
+________________React Pipeline on APP SVC
+
+npx create-react-app my-app
+cd my-app
+npm start
+
+______________________Django Pipeline on APP SVC
+django-admin startproject myproject .
+python manage.py runserver 0.0.0.0:8000
+
+Locally check karne ke liye
+localhost:8000
+
+python -version 
+django-admin --version
+
+_________________________________________React Pipeline on VM   only CI CD nhi kiya hei _________________________________________________________________________
+  1  mkdir myagent && cd myagent
+    2  wget https://vstsagentpackage.azureedge.net/agent/2.213.2/vsts-agent-linux-x64-2.213.2.tar.gz
+    3  tar zxvf vsts-agent-linux-x64-2.213.2.tar.gz
+    4  ./config.sh
+    5  ./run.sh 
+    6  ls
+    7  cd _work/r1/a/_shilpa-reac-cicd-onVM-CI/
+    
+    OR
+    
+    cd _work
+    8  ls
+    9  cd r1
+   10  ls
+   11  cd a
+   12  ls
+   13  cd _Myreact-pipeline-CI
+   14  ls
+   15  cd drop
+   16  ls
+   23  sudo apt-get install apache2
+   24  ls
+   25  cd ..
+   26  sudo cp -a drop/. /var/www/html/
+   27  history
