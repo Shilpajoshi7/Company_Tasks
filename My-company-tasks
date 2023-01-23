@@ -271,6 +271,47 @@ https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 3)django
 https://www.geeksforgeeks.org/dockerizing-a-simple-django-app/
 
+___________________xxxxxxxxxxxxxxxxxxxxxx Docker Files  khudh se bana ne thei....xxxxxxxx_______________________________________
+1) React ke 
+ small file  ->
+FROM node:10 as builder
+WORKDIR /app
+COPY . .
+EXPOSE 3000
+CMD yarn start
+
+Or use this file 
+FROM node                                                   
+WORKDIR /react-app                                           
+ADD package.json .                                           
+RUN npm install                                             
+COPY . .                                                     
+EXPOSE 3000                                                  
+CMD npm start
+
+2)Django ke 
+FROM python:latest
+RUN python -m pip install --upgrade pip
+WORKDIR /app
+ADD requirements.txt /app/
+RUN pip3 install -r requirements.txt
+COPY . /app/
+EXPOSE 8000
+RUN python manage.py migrate
+CMD python manage.py runserver 0.0.0.0:8000
+
+3)Node ke
+FROM node:latest
+WORKDIR /node-app
+ADD package.json /node-app/
+RUN npm install & npm cache clean --force
+COPY . /node-app/
+EXPOSE 8081
+CMD node index.js
+
+https://buddy.works/guides/how-dockerize-node-application
+
+
 
 
 ____________________  How to push DOcker images to DockerHUb _____________________________
@@ -297,11 +338,6 @@ d push myregistry.azurecr.io(Login server hei yeh ACR ka)/folder1/myimageIGiveNo
 ________________ How to push docker images to App Service ________________________
 
 ________________ How to push docker images to Container Instance ________________________
-
-
-
-
-
 
 
 
