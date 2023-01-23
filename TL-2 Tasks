@@ -1,4 +1,10 @@
 ____________________________________________________________PostgessSQL________________________________________________________________________________________
 https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html
 
-_______________________________________
+// EMPLOYEE WITH SECOND HIGHEST SALARY
+SELECT name, salary FROM employee WHERE salary < (SELECT MAX(salary) FROM employee) ORDER BY salary DESC LIMIT 1;
+
+// EMPLOYEE WITH Nth HIGHEST SALARY
+SELECT name, salary FROM employee ORDER BY salary DESC LIMIT (N-1), 1;
+
+____________________________________
