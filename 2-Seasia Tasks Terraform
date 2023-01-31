@@ -134,6 +134,10 @@ echo "<h1>Demo Bootstrapping Azure Virtual Machine</h1>" | sudo tee /var/www/htm
 
 
 __________________________________________________________Task-2 Django application deploy using tf on VM_________________________________________________________
+Virtual Machine mei zake 
+pwd
+O/P: /home/shilpa  Now change /home/shilpa everywhere
+
 #!/bin/bash
 sudo su
 sudo apt-get update -y
