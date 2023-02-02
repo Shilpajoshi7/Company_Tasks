@@ -134,9 +134,18 @@ echo "<h1>Demo Bootstrapping Azure Virtual Machine</h1>" | sudo tee /var/www/htm
 
 
 __________________________________________________________Task-2 Django application deploy using tf on VM_________________________________________________________
+os_profile {
+    computer_name      = "mooglelabs"
+    admin_username     = "shilpa" ------------> pwd = shilpa har jagah ubuntu ko hta ke shilpa daall
+    admin_password     = "Mooglelabs@123"
+    custom_data = file("script.sh")
+  }
+OR
+
 Virtual Machine mei zake 
 pwd
 O/P: /home/shilpa  Now change /home/shilpa everywhere
+
 
 #!/bin/bash
 sudo su
