@@ -278,7 +278,21 @@ ServerName  IP daal dena server ke yha pe
 
 
 
+----------------------React using nginx------
+#!/bin/bash
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt install nginx -y
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
+cd /home/sj && mkdir shilpa
+cd /home/sj/shilpa/ && sudo npm install -g create-react-app
+cd /home/sj/shilpa/ && sudo create-react-app apache-test
+cd /home/sj/shilpa/apache-test && sudo npm run-script build
+sudo cp -a /home/sj/shilpa/apache-test/build/* /var/www/html
 
+
+---------------
 
 
 
